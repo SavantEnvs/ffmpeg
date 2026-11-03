@@ -1,0 +1,9 @@
+project: savantenvs/ffmpeg
+target: target_dec_vorbis_fuzzer
+cmds:
+  - cmd: /mayhem/mayhem/out/target_dec_vorbis_fuzzer
+    libfuzzer: true
+    timeout: 30
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/target_dec_vorbis_fuzzer/testsuite
