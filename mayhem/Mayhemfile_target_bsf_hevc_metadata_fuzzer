@@ -1,0 +1,6 @@
+project: savantenvs/ffmpeg
+target: target_bsf_hevc_metadata_fuzzer
+cmds:
+  - cmd: /mayhem/mayhem/out/target_bsf_hevc_metadata_fuzzer
+    libfuzzer: true
+    timeout: 30
