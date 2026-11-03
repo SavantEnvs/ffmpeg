@@ -1,0 +1,6 @@
+project: savantenvs/ffmpeg
+target: target_dec_vp9_fuzzer
+cmds:
+  - cmd: /mayhem/mayhem/out/target_dec_vp9_fuzzer
+    libfuzzer: true
+    timeout: 30

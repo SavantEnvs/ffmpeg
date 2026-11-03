@@ -1,0 +1,6 @@
+project: savantenvs/ffmpeg
+target: target_dec_h264_fuzzer
+cmds:
+  - cmd: /mayhem/mayhem/out/target_dec_h264_fuzzer
+    libfuzzer: true
+    timeout: 30

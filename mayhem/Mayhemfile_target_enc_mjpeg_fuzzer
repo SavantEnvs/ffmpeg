@@ -1,0 +1,9 @@
+project: savantenvs/ffmpeg
+target: target_enc_mjpeg_fuzzer
+cmds:
+  - cmd: /mayhem/mayhem/out/target_enc_mjpeg_fuzzer
+    libfuzzer: true
+    timeout: 30
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/target_enc_mjpeg_fuzzer/testsuite

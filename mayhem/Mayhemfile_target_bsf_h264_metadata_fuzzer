@@ -1,0 +1,9 @@
+project: savantenvs/ffmpeg
+target: target_bsf_h264_metadata_fuzzer
+cmds:
+  - cmd: /mayhem/mayhem/out/target_bsf_h264_metadata_fuzzer
+    libfuzzer: true
+    timeout: 30
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/target_bsf_h264_metadata_fuzzer/testsuite
