@@ -1,0 +1,9 @@
+project: savantenvs/ffmpeg
+target: target_dvbsub_enc_fuzzer-mined-d98487b
+cmds:
+  - cmd: /mayhem/mayhem/out/target_dvbsub_enc_fuzzer
+    libfuzzer: true
+    timeout: 30
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/target_dvbsub_enc_fuzzer-mined-d98487b/testsuite
