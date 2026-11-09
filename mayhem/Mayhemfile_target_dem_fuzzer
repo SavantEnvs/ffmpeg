@@ -1,0 +1,7 @@
+project: savantenvs/ffmpeg
+target: target_dem_fuzzer-mined-497ea04
+cmds:
+  - cmd: /mayhem/mayhem/out/target_dem_fuzzer
+    libfuzzer: true
+    timeout: 30
+# seed-from: https://app.mayhem.security/savantenvs/ffmpeg/target-dem-fuzzer
