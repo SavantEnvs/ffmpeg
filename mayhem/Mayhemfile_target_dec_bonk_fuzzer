@@ -1,0 +1,6 @@
+project: savantenvs/ffmpeg
+target: target_dec_bonk_fuzzer-mined-9f5a9a7
+cmds:
+  - cmd: /mayhem/mayhem/out/target_dec_bonk_fuzzer
+    libfuzzer: true
+    timeout: 30
